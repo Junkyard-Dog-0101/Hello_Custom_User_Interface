@@ -20,29 +20,29 @@
             android:layout_height="match_parent"
             android:scaleType="fitCenter"
             android:src="@drawable/phone"
-            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
             android:background="#00000000"
             android:id="@+id/phone"/>
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
+            android:layout_weight="1"
             android:background="#00000000"
             android:scaleType="fitCenter"
             android:src="@drawable/lock"
             android:id="@+id/lock" />
-    </LinearLayout>
     <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:scaleType="fitCenter"
-        android:layout_gravity="bottom"
-        android:layout_weight="1"
-        android:layout_margin="7dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="5dp"
         android:background="#00000000"
         android:src="@drawable/time"
         android:id="@+id/time" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +54,6 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:layout_marginBottom="5dp"
             android:background="#00000000"
             android:scaleType="fitCenter"
             android:src="@drawable/message"
@@ -64,24 +63,18 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
             android:background="#00000000"
             android:scaleType="fitCenter"
             android:src="@drawable/camera"
             android:id="@+id/camera" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
 
         <ImageButton
             android:id="@+id/browser"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:layout_marginBottom="5dp"
+            android:layout_marginLeft ="5dp"
             android:background="#00000000"
             android:scaleType="fitCenter"
             android:src="@drawable/browser" />
@@ -91,7 +84,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
-            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
             android:background="#00000000"
             android:scaleType="fitCenter"
             android:src="@drawable/music"/>

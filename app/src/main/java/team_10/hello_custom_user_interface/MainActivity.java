@@ -4,6 +4,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +15,75 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView phone = (ImageView) findViewById(R.id.phone);
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = new Toast(getBaseContext());
+                toast = Toast.makeText(getApplicationContext(),"PHONE", Toast.LENGTH_SHORT);
+                 toast.show();
+            }
+        });
+        
+        ImageView lock = (ImageView) findViewById(R.id.lock);
+        lock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = new Toast(getBaseContext());
+                toast = Toast.makeText(getApplicationContext(), "LOCKER", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        
+        ImageView timer = (ImageView) findViewById(R.id.time);
+        timer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = new Toast(getBaseContext());
+                toast = Toast.makeText(getApplicationContext(),"TIMER", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        
+        ImageView message = (ImageView) findViewById(R.id.message);
+        message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = new Toast(getBaseContext());
+                toast = Toast.makeText(getApplicationContext(),"MESSAGE", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        
+        ImageView camera = (ImageView) findViewById(R.id.camera);
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = new Toast(getBaseContext());
+                toast = Toast.makeText(getApplicationContext(),"CAMERA", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        
+        ImageView browser = (ImageView) findViewById(R.id.browser);
+        browser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = new Toast(getBaseContext());
+                toast = Toast.makeText(getApplicationContext(),"BROWSER", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        
+        ImageView music = (ImageView) findViewById(R.id.music);
+        music.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = new Toast(getBaseContext());
+                toast = Toast.makeText(getApplicationContext(),"MUSIC", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
     }
 
 
